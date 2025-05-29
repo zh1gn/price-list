@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helloxszets price list - прайс-лист услуг">
+    <title>Helloxszets price list</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg">
+</head>
+
+<body>
+    <div class="bg-animated"></div>
+    <div class="container">
+        <header class="main-header">
+            <h1 class="price-title">Helloxszets<br><span class="gradient-text">price list</span></h1>
+            <p class="welcome-text">👋 Добро пожаловать! Здесь вы найдёте актуальные цены на услуги.<br>Выберите
+                сложность и свяжитесь со мной для заказа!</p>
+        </header>
+
+        <main>
+            <section class="difficulty-selector">
+                <h2 class="selector-title">Выберите сложность:</h2>
+                <select class="difficulty-select" onchange="updatePriceList()">
+                    <option value="easy">Легкий</option>
+                    <option value="hard">Сложный</option>
+                </select>
+            </section>
+
+            <section class="price-lists">
+                <div class="price-list" id="easy"></div>
+                <div class="price-list" id="hard"></div>
+            </section>
+
+            <div class="contact-block">
+                <button class="contact-btn pulse" onclick="openTelegram()">
+                    <svg class="tg-icon-btn" viewBox="0 0 240 240">
+                        <g>
+                            <circle fill="#0088cc" cx="120" cy="120" r="120" />
+                            <path fill="#fff"
+                                d="M179.7 74.7c2.5-1.1 5.2 1.2 4.5 3.9l-27.2 114.5c-.6 2.6-3.8 3.6-5.7 1.8l-32.2-29.5c-1.5-1.4-3.8-1.4-5.3 0l-17.6 16.1c-1.7 1.6-4.5.7-5.1-1.6l-13.5-52.7c-.5-2 .5-4.1 2.4-5l104.7-48.5z" />
+                        </g>
+                    </svg>
+                    Связаться с создателем
+                </button>
+                <div class="tg-link">
+                    <a href="https://t.me/helloxszets" target="_blank" rel="noopener" id="tg-link">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg"
+                            alt="Telegram" class="tg-icon">
+                        <span class="tg-nick">@helloxszets</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
